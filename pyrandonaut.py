@@ -210,7 +210,7 @@ def main():
     coordinate = get_coordinate(args.latitude, args.longitude, args.radius, args.points)
 
     if not args.verbose:
-        print(f"{coordinate['lat']}, {coordinate['lon']}")
+        print(f"{coordinate[0]}, {coordinate[1]}")
 
 
 if __name__ == "__main__":
