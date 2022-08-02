@@ -11,7 +11,7 @@ with open('README.md') as readme_file:
 # 'setup.py publish' shortcut.
 if argv[-1] == 'publish':
     os.system('python setup.py sdist bdist_wheel')
-    os.system('twine upload --repository testpypi dist/*')
+    os.system('twine upload dist/*')
     exit()
 elif argv[-1] == 'clean':
     import shutil
