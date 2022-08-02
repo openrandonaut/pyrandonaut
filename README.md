@@ -54,7 +54,7 @@ That's it!
 			* `num_points` Number of random points to use in calculation of kernel density estimate (integer)
 		
 			It returns a tuple in the following format:<br>
-			`(latitude, longitude)`
+			`(latitude, longitude)`<br>
 		
 		* **`random_location()`** Converts 2 floating point values to coordinates within
     the defined radius from the starting position. It takes the following arguments:
