@@ -19,6 +19,7 @@ Contributions greatly appreciated!
 * [Usage](#usage)
 	* [As module](#as-module)
 	* [Command line interface](#command-line-interface)
+* To-do [#to-do]
 
 ## Installation
 The module requires at least Python 3.9 to function and can be installed using [pip](https://pip.pypa.io/en/stable/) like so:<br>
@@ -94,3 +95,11 @@ That's it!
 	  -r RADIUS   max radius from starting position in meters
 	  -p POINTS   number of points to base KDE on (must be divisible by 1024)
 	  -v          verbose logging
+
+```
+
+## To-do
+- [ ] Add more QRNG sources
+- [ ] Make requests to ANU QRNG API asynchronous
+- [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
+- [ ] Get people excited about the project!
