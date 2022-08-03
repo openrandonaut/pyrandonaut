@@ -116,7 +116,7 @@ def calculate_kde(coord_list: list) -> tuple:
 
 
 def get_coordinate(
-    start_lat: float, start_lon: float, radius: int, num_points: int
+    start_lat:float, start_lon=float, radius:int = 5000, num_points:int = 1024
 ) -> dict:
     """Takes a starting position, radius and the number of random points to
     base the calculation on, and returns the gaussian kernel desity estimate
@@ -217,4 +217,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
