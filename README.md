@@ -96,11 +96,13 @@ That's it!
 	  -p POINTS   number of points to base KDE on (must be divisible by 1024)
 	  -v          verbose logging
 
-```
+	```
+
+
 
 ## To-do
 - [ ] Get people excited about the project!
-- [ ] Add more QRNG sources
+- [ ] Add more QRNG sources (If you can help supply hardware modules for testing, please get in touch!)
 - [ ] Make requests to ANU QRNG API asynchronous
 - [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
 - [ ] Add ability to calculate Void and Power points as well
