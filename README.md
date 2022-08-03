@@ -19,7 +19,7 @@ Contributions greatly appreciated!
 * [Usage](#usage)
 	* [As module](#as-module)
 	* [Command line interface](#command-line-interface)
-* To-do [#to-do]
+* [To-do](#to-do)
 
 ## Installation
 The module requires at least Python 3.9 to function and can be installed using [pip](https://pip.pypa.io/en/stable/) like so:<br>
