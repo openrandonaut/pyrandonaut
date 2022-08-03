@@ -52,7 +52,7 @@ That's it!
 			* `start_lat` Latitude of starting position (float)
 			* `start_lon` Longitude of starting position (float)
 			* `radius` Max radius from starting position (integer)
-			* `num_points` Number of random points to use in calculation of kernel density estimate (integer)
+			* `num_points` Number of random points to use in calculation of kernel density estimate. Must be divisible by 1024 (integer)
 		
 			It returns a tuple in the following format:<br>
 			`(latitude, longitude)`<br>
