@@ -19,7 +19,7 @@ Contributions greatly appreciated!
 * [Usage](#usage)
 	* [As module](#as-module)
 	* [Command line interface](#command-line-interface)
-* Visualization(#visualization)
+* [Visualization](#visualization)
 * [To-do](#to-do)
 
 ## Installation
