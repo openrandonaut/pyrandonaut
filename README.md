@@ -96,8 +96,7 @@ That's it!
 	  -p POINTS   number of points to base KDE on (must be divisible by 1024)
 	  -v          verbose logging
 
-	```
-
+```
 
 
 ## To-do
