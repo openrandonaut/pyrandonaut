@@ -103,4 +103,4 @@ That's it!
 - [ ] Add more QRNG sources
 - [ ] Make requests to ANU QRNG API asynchronous
 - [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
-- [ ] Add ability to Void and Power points 
+- [ ] Add ability to calculate Void and Power points as well
