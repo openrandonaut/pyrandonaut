@@ -28,7 +28,7 @@ import quantumrandom
 from scipy import stats
 
 __author__ = 'openrandonaut'
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 
 class Error(Exception):
     """Base class for other exceptions"""

@@ -25,7 +25,7 @@ elif argv[-1] == 'clean':
 
 setup(
     name="pyrandonaut",
-    version="0.1.4",
+    version="0.1.5",
     description="Open-source quantum random coordinate generation for randonauts.",
     long_description_content_type='text/markdown',
     long_description=long_description,
