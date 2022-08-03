@@ -1,0 +1,6 @@
+
+.DS_Store
+pyrandonaut/__pycache__/
+dist/
+build/
+pyrandonaut.egg-info
