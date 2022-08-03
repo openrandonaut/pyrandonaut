@@ -99,7 +99,8 @@ That's it!
 ```
 
 ## To-do
+- [ ] Get people excited about the project!
 - [ ] Add more QRNG sources
 - [ ] Make requests to ANU QRNG API asynchronous
 - [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
-- [ ] Get people excited about the project!
+- [ ] Add ability to Void and Power points 
