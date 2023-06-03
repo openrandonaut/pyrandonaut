@@ -38,7 +38,7 @@ setup(
     install_requires=[
     "numpy==1.23.1",
     "pandas==1.4.3",
-    "quantumrandom==1.9.0",
+    "randonautentropy==1.0.2",
     "scipy==1.9.0",
     "setuptools==58.1.0"
     ],

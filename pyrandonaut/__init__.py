@@ -12,19 +12,22 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 """This module interfaces with the Quantum Random Number Generator
-at the The Australian National University, where it gets a listof
-n truly random numbers, converts them to coordinates and computes the
-gaussian kernel density estimate of those coordinates, returning the
-point within the defined radius, where the density of random coordinates
+at Randonautica , where it gets a listof n truly random numbers, converts them 
+to coordinates and computes the gaussian kernel density estimate of those coordinates, 
+returning the point within the defined radius, where the density of random coordinates
 is highest, similar to how an Attractor point is calculated by Randonautica."""
 
 import argparse
 import logging
 import math
+import sys
+import binascii
+import ctypes
 
 import numpy as np
 import pandas as pd
 import quantumrandom
+import randonautentropy
 from scipy import stats
 
 __author__ = 'openrandonaut'
@@ -41,20 +44,27 @@ class DivisionError(Error):
 EARTH_RADIUS = 6371  # km
 ONE_DEGREE = EARTH_RADIUS * 2 * math.pi / 360 * 1000  # 1° latitude in meters
 
+def get_data(amount: int):
+    """Gets a string of 4096 bytes from Randonautica's QRNG
+       and turns it into a list of uint16 values"""
+    
+    hex_string = randonautentropy.rndo.get(4 * amount)
+    chunks = [hex_string[i:i+4] for i in range(0, len(hex_string), 4)]
+    return [ctypes.c_uint16(int(chunk, 16)).value for chunk in chunks]
 
 def int_to_float(input_integer: int) -> float:
     """Converts an integer to a floating point value"""
 
     source_bits = int(math.ceil(math.log(1 + 1, 2)))
-    source_size = int(math.ceil(source_bits / float(quantumrandom.INT_BITS)))
-    source_max = 2 ** (source_size * quantumrandom.INT_BITS) - 1
+    source_size = int(math.ceil(source_bits / 16.0))
+    source_max = 2 ** (source_size * 16) - 1
 
     modulos = source_max / 1
 
     while True:
         num = 0
         for _ in range(source_size):
-            num <<= quantumrandom.INT_BITS
+            num <<= 16
             num += input_integer
 
         if num >= modulos:
@@ -134,7 +144,7 @@ def get_coordinate(
             num_points,
         )
         numbers.extend(
-            quantumrandom.get_data(data_type="uint16", array_length=1024, block_size=1)
+            get_data(1024)
         )
 
     logging.info("Converting integers to coordinates... ")
