@@ -106,6 +106,7 @@ That's it!
 
 
 ## To-do
+- [ ] Migrate _all_ documentation to docstrings/type hints for Sphinx auto generation
 - [ ] Add more QRNG sources (If you can help supply hardware modules for testing, please get in touch!)
 - [ ] Implement asynchronous requests
 - [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
