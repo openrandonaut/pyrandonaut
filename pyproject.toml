@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pyrandonaut"
+version = "0.1.8"
+description = "Open-source quantum random coordinate generation for randonauts <3"
+authors = ["alicemandragora <openrandonaut@riseup.net>"]
+license = "GPLv3"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    'Topic :: System :: Installation/Setup',
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "1.23.1"
+pandas = "1.4.3"
+randonautentropy = "1.0.2"
+scipy = "1.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+repository = "https://github.com/openrandonaut/pyrandonaut"
+documentation = "http://pyrandonaut.readthedocs.io/"
+
+[tool.poetry.scripts]
+pyrandonaut = "pyrandonaut.__init__:__main__"

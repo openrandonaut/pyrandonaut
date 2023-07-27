@@ -30,7 +30,7 @@ import randonautentropy
 from scipy import stats
 
 __author__ = 'openrandonaut'
-__version__ = "0.1.7"
+__version__ = "0.1.8"
 
 class Error(Exception):
     """Base class for other exceptions"""
@@ -222,7 +222,8 @@ def main():
 
     if not args.verbose:
         print(f"{coordinate[0]}, {coordinate[1]}")
-
+    
+    sys.exit()
 
 if __name__ == "__main__":
     main()
