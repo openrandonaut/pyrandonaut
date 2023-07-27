@@ -4,7 +4,7 @@ API Reference
 
 :mod:`pyrandonaut`
 =====================
-.. automodule:: pyrandonaut.__init__
+.. automodule:: pyrandonaut
    :members:
    :private-members:
    :special-members:
