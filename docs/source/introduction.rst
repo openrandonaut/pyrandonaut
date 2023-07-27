@@ -12,9 +12,7 @@ Introduction
    :alt: License: GPLv3
    :target: https://www.gnu.org/licenses/gpl-3.0
 
-**pyrandonaut** a Python3 module for generating quantum random coordinates.
-
-It interfaces with the QRNG at Randonautica where it gets a list of
+**pyrandonaut** interfaces with a QRNG (Quantum Random Number Generator) where it gets a list of
 `quantum
 random <https://en.wikipedia.org/wiki/Hardware_random_number_generator#Quantum_random_properties>`__
 numbers, converts them to coordinates and then computes the `gaussian

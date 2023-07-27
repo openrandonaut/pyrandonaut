@@ -11,11 +11,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-"""This module interfaces with the Quantum Random Number Generator
-at Randonautica , where it gets a list of n truly random numbers, converts them 
-to coordinates and computes the gaussian kernel density estimate of those coordinates, 
-returning the point within the defined radius, where the density of random coordinates
-is highest, similar to how an Attractor point is calculated by the Randonautica app."""
+"""This module interfaces with a QRNG (Quantum Random Number Generator) where it gets 
+a list of n truly random numbers, converts them to coordinates and computes the gaussian
+kernel density estimate of those coordinates, returning the point within the defined radius,
+where the density of random coordinates is highest, similar to how an Attractor point is
+calculated by the Randonautica app."""
 
 import argparse
 import logging
@@ -168,12 +168,11 @@ def main():
     """If run as a script, take arguments using argparse and print result to stdout"""
 
     parser = argparse.ArgumentParser(
-        description="This script interfaces with the Quantum Random Number Generator\
-                     at Randonautica, where it gets a list of\
-                     quantum random numbers, converts them to coordinates and computes the\
-                     gaussian kernel density estimate of those coordinates, returning the\
-                     point within the defined radius, where the density of random coordinates\
-                     is highest, similar to how an Attractor point is calculated by the Randonautica app."
+        description="This application interfaces with a QRNG (Quantum Random Number Generator)\
+                     where it gets a list of quantum random numbers, converts them to coordinates\
+                     and computes the gaussian kernel density estimate of those coordinates, returning\
+                     the point within the defined radius, where the density of random coordinates is\
+                     highest, similar to how an Attractor point is calculated by the Randonautica app."
     )
 
     parser.add_argument(
