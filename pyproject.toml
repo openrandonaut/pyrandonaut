@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "pyrandonaut"
-version = "0.1.8"
+version = "0.1.9"
 description = "Open-source quantum random coordinate generation for randonauts <3"
 authors = ["alicemandragora <openrandonaut@riseup.net>"]
 license = "GPLv3"
+readme = "README.md"
 classifiers = [
     "Development Status :: 4 - Beta",
     'Topic :: System :: Installation/Setup',

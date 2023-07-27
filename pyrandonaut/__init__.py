@@ -30,7 +30,7 @@ import randonautentropy
 from scipy import stats
 
 __author__ = 'openrandonaut'
-__version__ = "0.1.8"
+__version__ = "0.1.9"
 
 class Error(Exception):
     """Base class for other exceptions"""
