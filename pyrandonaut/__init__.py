@@ -26,7 +26,6 @@ import ctypes
 
 import numpy as np
 import pandas as pd
-import quantumrandom
 import randonautentropy
 from scipy import stats
 
@@ -171,11 +170,11 @@ def main():
 
     parser = argparse.ArgumentParser(
         description="This script interfaces with the Quantum Random Number Generator\
-                     at the The Australian National University, where it gets a list of\
+                     at Randonautica, where it gets a list of\
                      quantum random numbers, converts them to coordinates and computes the\
                      gaussian kernel density estimate of those coordinates, returning the\
                      point within the defined radius, where the density of random coordinates\
-                     is highest, similar to how an Attractor point is calculated by Randonautica."
+                     is highest, similar to how an Attractor point is calculated by the Randonautica app."
     )
 
     parser.add_argument(
@@ -201,7 +200,7 @@ def main():
         type=int,
         dest="points",
         default=4096,
-        help="number of points to base KDE on (must be divisible by 2014)",
+        help="number of points to base KDE on (must be divisible by 1024)",
     )
 
     parser.add_argument(
