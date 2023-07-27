@@ -56,11 +56,6 @@ html_theme_options = {
     "navigation_depth": -1,
 }
 
-html_static_path = ["_static"]
-html_css_files = [
-    "css/rtd_dark.css",
-]
-
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
 html_use_smartypants = False
