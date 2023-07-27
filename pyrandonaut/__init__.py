@@ -12,10 +12,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 """This module interfaces with the Quantum Random Number Generator
-at Randonautica , where it gets a listof n truly random numbers, converts them 
+at Randonautica , where it gets a list of n truly random numbers, converts them 
 to coordinates and computes the gaussian kernel density estimate of those coordinates, 
 returning the point within the defined radius, where the density of random coordinates
-is highest, similar to how an Attractor point is calculated by Randonautica."""
+is highest, similar to how an Attractor point is calculated by the Randonautica app."""
 
 import argparse
 import logging
