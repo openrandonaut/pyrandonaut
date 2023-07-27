@@ -9,7 +9,7 @@ API Reference
 
 .. only:: python3
 
-    .. automodule:: pyrandonaut
+    .. automodule:: pyrandonaut.__init__
         :members:
         :private-members:
         :special-members:
