@@ -1,7 +1,15 @@
-API
-===
+*************
+API Reference
+*************
 
-.. autosummary::
-   :toctree: generated
+.. contents:: Table of Contents
 
-   pyrandonaut
+:mod:`pyrandonaut`
+=====================
+
+.. only:: python3
+
+    .. automodule:: pyrandonaut
+        :members:
+        :private-members:
+        :special-members:
