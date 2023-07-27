@@ -25,7 +25,7 @@ Usage
 
    -  **Functions and arguments:**
 
-      -  **``get_coordinate()``** is the main functionality of the
+      -  **get_coordinate()** is the main functionality of the
          library, generating a coordinate equivalent to an Attractor
          point in Randonautica. It takes the following arguments:
 
@@ -39,7 +39,7 @@ Usage
          It returns a tuple in the following format:
          ``(latitude, longitude)``\ 
 
-      -  **``random_location()``** Converts 2 floating point values to
+      -  **random_location()** Converts 2 floating point values to
          coordinates within the defined radius from the starting
          position. It takes the following arguments:
 

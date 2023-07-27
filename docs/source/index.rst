@@ -9,4 +9,5 @@ Contents
    introduction
    installation
    usage
+   visualization
    api
