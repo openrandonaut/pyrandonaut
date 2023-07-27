@@ -58,7 +58,7 @@ html_theme_options = {
 
 html_static_path = ["_static"]
 html_css_files = [
-    "_static/css/rtd_dark.css",
+    "css/rtd_dark.css",
 ]
 
 # If true, SmartyPants will be used to convert quotes and dashes to
