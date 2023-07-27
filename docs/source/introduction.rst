@@ -1,5 +1,16 @@
 Introduction
 ===========================
+.. image:: https://img.shields.io/badge/built%20with-Python3-red.svg
+   :alt: Python
+   :target: https://img.shields.io/badge/built%20with-Python3-red.svg
+
+.. image:: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+   :alt: PRs Welcome
+   :target: http://makeapullrequest.com
+
+.. image:: https://img.shields.io/badge/License-GPLv3-blue.svg
+   :alt: License: GPLv3
+   :target: https://www.gnu.org/licenses/gpl-3.0
 
 **pyrandonaut** a Python3 module for generating quantum random coordinates.
 
