@@ -1,4 +1,4 @@
-Introduction to pyrandonaut
+Introduction
 ===========================
 
 .. _open-source-quantum-random-coordinate-generation-for-randonauts-️:

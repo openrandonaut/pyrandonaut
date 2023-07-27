@@ -5,7 +5,8 @@ Welcome to pyrandonaut's documentation!
 
 .. raw:: html
 
-   <img align="left" src="https://i.imgur.com/RJxATsu.png" width="170">
+   <img align="left" src="https://i.imgur.com/RJxATsu.png" width="170"><br>
+
 
 Contents
 --------
