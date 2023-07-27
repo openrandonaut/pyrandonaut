@@ -1,4 +1,4 @@
-Welcome to pyrandonaut's documentation!
+pyrandonaut documentation
 ===================================
 
 Contents
