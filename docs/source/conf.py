@@ -5,7 +5,7 @@ import pyrandonaut
 # -- Project information
 
 project = 'pyrandonaut'
-copyright = u'2023. An <a href="https://github.com/openrandonaut">OpenRandonaut</a> Project'
+copyright = u'2023. OpenRandonaut'
 author = 'OpenRandonaut <openrandonaut@riseup.net>'
 
 version = pyrandonaut.__version__
