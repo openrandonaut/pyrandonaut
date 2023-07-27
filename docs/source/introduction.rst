@@ -1,10 +1,6 @@
 Introduction
 ===========================
 
-.. raw:: html
-
-   <img align="left" src="https://i.imgur.com/RJxATsu.png" width="170">
-
 **pyrandonaut** a Python3 module for generating quantum random coordinates.
 
 It interfaces with the QRNG at Randonautica where it gets a list of
