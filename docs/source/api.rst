@@ -2,14 +2,13 @@
 API Reference
 *************
 
-.. contents:: Table of Contents
-
 :mod:`pyrandonaut`
 =====================
 
 .. only:: python3
 
-    .. automodule:: pyrandonaut.__init__
+    .. automodule:: pyrandonaut
         :members:
         :private-members:
         :special-members:
+        :undoc-members:

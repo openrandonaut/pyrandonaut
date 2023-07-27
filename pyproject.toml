@@ -26,6 +26,7 @@ scipy = "1.9.0"
 
 [tool.poetry.dev-dependencies]
 sphinx-rtd-theme = "1.2.2"
+pyrandonaut = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
