@@ -85,7 +85,8 @@ That's it!
 	$ python pyrandonaut.py --help                                                                                                                             
 	usage: pyrandonaut.py [-h] [-r RADIUS] [-p POINTS] [-v] LATITUDE LONGITUDE
 	
-	This script interfaces with the Quantum Random Number Generator at the The Australian National University, where it gets a list of quantum random numbers, converts them to coordinates and computes the gaussian kernel density estimate of those coordinates, returning the point within the defined radius, where the density of random coordinates is highest, similar to how an Attractor point is calculated by Randonautica.
+	This script interfaces with the Quantum Random Number Generator at Randnautica, where
+	it gets a list of quantum random numbers, converts them to coordinates and computes the gaussian kernel density estimate of those coordinates, returning the point within the defined radius, where the density of random coordinates is highest, similar to how an Attractor point is calculated by Randonautica.
 	
 	positional arguments:
 	  LATITUDE    starting position latitude
@@ -105,8 +106,7 @@ That's it!
 
 
 ## To-do
-- [ ] Get people excited about the project!
 - [ ] Add more QRNG sources (If you can help supply hardware modules for testing, please get in touch!)
-- [ ] Make requests to ANU QRNG API asynchronous
+- [ ] Implement asynchronous requests
 - [ ] Implement heatmap generation from [openrandonaut-bot](https://github.com/openrandonaut/openrandonaut-bot)
 - [ ] Add ability to calculate Void and Power points as well
