@@ -5,7 +5,7 @@
 project = 'pyrandonaut'
 author = 'OpenRandonaut <openrandonaut@riseup.net>'
 
-release = '0.1'
+release = '0.1.9'
 version = '0.1.9'
 
 # -- General configuration
@@ -32,3 +32,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+html_show_sourcelink = False
