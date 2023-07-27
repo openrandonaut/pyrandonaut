@@ -4,9 +4,9 @@ import pyrandonaut
 
 # -- Project information
 
-project = 'pyrandonaut'
-copyright = u'2023. OpenRandonaut'
-author = 'OpenRandonaut <openrandonaut@riseup.net>'
+project = "pyrandonaut"
+copyright = "2023. OpenRandonaut"
+author = "OpenRandonaut <openrandonaut@riseup.net>"
 
 version = pyrandonaut.__version__
 # The full version, including alpha/beta/rc tags.
@@ -14,24 +14,27 @@ release = pyrandonaut.__version__
 
 # -- General configuration
 
-html_show_sourcelink = False    
+html_show_sourcelink = False
+master_doc = "index"
+suppress_warnings = ["image.nonlocal_uri"]
+pygments_style = "default"
 
 extensions = [
-    'sphinx_rtd_theme',
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.viewcode',
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.viewcode",
+    "sphinx_rtd_theme",
 ]
 
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    "python": ("https://docs.python.org/3/", None),
+    "rtd": ("https://docs.readthedocs.io/en/stable/", None),
+    "rtd-dev": ("https://dev.readthedocs.io/en/stable/", None),
+    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
 }
-intersphinx_disabled_domains = ['std']
-
+intersphinx_disabled_domains = ["std"]
 
 
 # -- Options for HTML output
@@ -43,12 +46,12 @@ html_theme = "sphinx_rtd_theme"
 html_logo = "_static/logo.png"
 
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'navigation_depth': -1,
+    "logo_only": False,
+    "display_version": True,
+    "prev_next_buttons_location": "bottom",
+    "style_external_links": False,
+    "vcs_pageview_mode": "",
+    "navigation_depth": -1,
 }
 
 # If true, SmartyPants will be used to convert quotes and dashes to
@@ -56,7 +59,7 @@ html_theme_options = {
 html_use_smartypants = False
 
 # -- Options for EPUB output
-epub_show_urls = 'footnote'
+epub_show_urls = "footnote"
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
@@ -71,3 +74,31 @@ autodoc_typehints = "description"
 
 # Don't show class signature with the class' name.
 autodoc_class_signature = "separated"
+
+
+# Extensions to theme docs
+def setup(app):
+    from sphinx.domains.python import PyField
+    from sphinx.util.docfields import Field
+
+    app.add_object_type(
+        "confval",
+        "confval",
+        objname="configuration value",
+        indextemplate="pair: %s; configuration value",
+        doc_field_types=[
+            PyField(
+                "type",
+                label=_("Type"),
+                has_arg=False,
+                names=("type",),
+                bodyrolename="class",
+            ),
+            Field(
+                "default",
+                label=_("Default"),
+                has_arg=False,
+                names=("default",),
+            ),
+        ],
+    )
