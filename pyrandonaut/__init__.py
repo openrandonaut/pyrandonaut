@@ -36,7 +36,7 @@ class Error(Exception):
 
 
 class DivisionError(Error):
-    """Raised when number of requested point isn't divisible by 1024"""
+    """Raised when number of requested points isn't divisible by 1024"""
 
 
 EARTH_RADIUS = 6371  # km
