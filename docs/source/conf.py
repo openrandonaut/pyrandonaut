@@ -8,7 +8,7 @@ from sphinx.locale import _
 project = "pyrandonaut"
 copyright = "2023. OpenRandonaut"
 author = "OpenRandonaut <openrandonaut@riseup.net>"
-language = 'en'
+language = "en"
 
 version = pyrandonaut.__version__
 # The full version, including alpha/beta/rc tags.
@@ -28,7 +28,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx_rtd_theme",
-    "sphinx.ext.napoleon"
+    "sphinx.ext.napoleon",
 ]
 
 intersphinx_mapping = {
@@ -43,6 +43,7 @@ intersphinx_disabled_domains = ["std"]
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
 
 html_logo = "_static/logo.png"
 
@@ -54,6 +55,11 @@ html_theme_options = {
     "vcs_pageview_mode": "",
     "navigation_depth": -1,
 }
+
+html_static_path = ["_static"]
+html_css_files = [
+    "_static/css/rtd_dark.css",
+]
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -75,6 +81,15 @@ autodoc_typehints = "description"
 
 # Don't show class signature with the class' name.
 autodoc_class_signature = "separated"
+
+autodoc_default_options = {
+    "members": True,
+    "member-order": "bysource",
+    "undoc-members": True,
+    "private-members": True,
+    "special-members": "__init__",
+    "exclude-members": "__weakref__",
+}
 
 
 # Extensions to theme docs
