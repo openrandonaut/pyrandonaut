@@ -1,12 +1,14 @@
 # Configuration file for the Sphinx documentation builder.
 
 import pyrandonaut
+from sphinx.locale import _
 
 # -- Project information
 
 project = "pyrandonaut"
 copyright = "2023. OpenRandonaut"
 author = "OpenRandonaut <openrandonaut@riseup.net>"
+language = 'en'
 
 version = pyrandonaut.__version__
 # The full version, including alpha/beta/rc tags.
