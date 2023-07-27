@@ -1,6 +1,7 @@
 ## PyRandonaut
 ![Python](https://img.shields.io/badge/built%20with-Python3-red.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+<a href='https://github.com/repo-reviews/repo-reviews.github.io/blob/main/create.md' target="_blank"><img alt='Github' src='https://img.shields.io/badge/review_me-100000?style=flat&logo=Github&logoColor=white&labelColor=888888&color=555555'/></a>
 
 ### Open-source quantum random coordinate generation for randonauts ❤️
 <img align="left" src="https://i.imgur.com/RJxATsu.png" width="170">
