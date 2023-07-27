@@ -21,7 +21,6 @@ import argparse
 import logging
 import math
 import sys
-import binascii
 import ctypes
 
 import numpy as np
