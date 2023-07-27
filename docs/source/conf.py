@@ -33,8 +33,6 @@ extensions = [
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
-    "rtd": ("https://docs.readthedocs.io/en/stable/", None),
-    "rtd-dev": ("https://dev.readthedocs.io/en/stable/", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
 }
 intersphinx_disabled_domains = ["std"]
@@ -73,10 +71,10 @@ add_module_names = True
 
 # Automatically extract typehints when specified and place them in
 # descriptions of the relevant function/method.
-autodoc_typehints = "description"
+# autodoc_typehints = "description"
 
 # Don't show class signature with the class' name.
-autodoc_class_signature = "separated"
+# autodoc_class_signature = "separated"
 
 
 # Extensions to theme docs
