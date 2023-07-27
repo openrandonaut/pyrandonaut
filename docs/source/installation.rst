@@ -1,9 +1,9 @@
 Installation
 ============
 
-The module requires at least **Python 3.9** to function.
-It can be installed using `pip <https://pip.pypa.io/en/stable/>`__ like so:
-:raw-html:`<br />`
-``pip install pyrandonaut``
+| The module requires at least **Python 3.9** to function.
+| It can be installed using `pip <https://pip.pypa.io/en/stable/>`__ like so:
 
-That's it!
+| ``pip install pyrandonaut``
+
+| That's it!
